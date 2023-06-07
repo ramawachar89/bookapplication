@@ -11,3 +11,12 @@ export const loadBooks = () => {
       payload: book,
     };
   };
+  export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+
+// Action Creator
+export const removeFromCart = (book) => {
+  return {
+    type: REMOVE_FROM_CART,
+    payload: book,
+  };
+};

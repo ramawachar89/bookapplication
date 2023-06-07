@@ -15,7 +15,6 @@
     height: 500px;
     background-size: cover;
   }
-  
   .card:hover {
     transform: translateY(-5px);
   }
@@ -48,7 +47,7 @@
   }
   
   .card-button {
-    background-color: #c24f0c;
+    background-color: #a74f1c;
     color: #fff;
     padding: 8px 16px;
     border-radius: 4px;
