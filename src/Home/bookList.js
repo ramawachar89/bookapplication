@@ -6,7 +6,7 @@ import "./booklist.css";
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import Slide from '@mui/material/Slide';
-
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const BookList = () => {
   const books = useSelector((state) => state.books);
@@ -37,10 +37,16 @@ const BookList = () => {
   const handleClose = () => {
     setOpen(false);
   };
+  function placed(){
+    alert("Order Placed Successfully")
+  }
 
   const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
+  function close(){
+    setIsView(false)
+  }
 
   return (
     <>
@@ -51,19 +57,21 @@ const BookList = () => {
         PaperProps={{
           style: {
             borderRadius: "20px",
-        
-            height:"800px",
+           padding:"1rem",
+            height:"700px",
             width:"1000px"
           }
         }}
       >
-        <h1>Views</h1>
-        <p>
+       <h2 style={{marginLeft:"32rem",fontSize:"2rem",cursor:"pointer"}} onClick={close}><AiFillCloseCircle/></h2> 
+        <h2 style={{marginLeft:"12rem",marginTop:"1rem"}}>Book Details</h2>
+        <p style={{fontSize:"2rem",marginTop:"2rem"}} >
         {bookDetails}
          
         </p>
     
-        
+       <button  className="card-button" onClick={placed}>Placed Order</button> 
+       <button></button>
       </Dialog> :""}
 
 
@@ -71,7 +79,7 @@ const BookList = () => {
 
       <div>
         <div className="head">
-          <h1>Book List</h1>
+          <h1 >Book List</h1>
           <input
             type="text"
             placeholder="Search Book here..."
