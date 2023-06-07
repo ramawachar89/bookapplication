@@ -1,14 +1,20 @@
-import React, { useState } from "react";
+import React, { isValidElement, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../Redux/booksActions";
 import NavBar from "../Navbar/navbar";
 import "./booklist.css";
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import Slide from '@mui/material/Slide';
+
 
 const BookList = () => {
   const books = useSelector((state) => state.books);
   const [searchTerm, setSearchTerm] = useState("");
+  const [bookDetails, setBookDetails] = useState('');
+  const [open, setOpen] = useState(false);
   const dispatch = useDispatch();
-
+ const[isview,setIsView]=useState(false)
   const filteredBooks = books.filter((book) =>
     book.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -21,9 +27,47 @@ const BookList = () => {
     dispatch(addToCart(book));
   };
 
+  const handleBookDetails = (book) => {
+    setIsView(true)
+    setBookDetails(book.details,book.image)
+   
+    // setOpen(true);
+  }
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+  });
+
   return (
     <>
       <NavBar />
+      {isview ?
+      <Dialog
+        open={isview}
+        PaperProps={{
+          style: {
+            borderRadius: "20px",
+        
+            height:"800px",
+            width:"1000px"
+          }
+        }}
+      >
+        <h1>Views</h1>
+        <p>
+        {bookDetails}
+         
+        </p>
+    
+        
+      </Dialog> :""}
+
+
+
+
       <div>
         <div className="head">
           <h1>Book List</h1>
@@ -41,7 +85,13 @@ const BookList = () => {
               <p className="card-author">Author: {book.authorName}</p>
               <p className="card-price">Price: {book.price}</p>
               <img height="300px" src={book.image} alt={book.name} />
-              <button className="card-button">View Details</button>
+              {/* <Button variant="outlined" onClick={handleBookDetails}>
+                View Details
+              </Button> */}
+              <button className="card-button"
+                onClick={() => handleBookDetails(book)}
+              >
+                View Details</button>
               <button
                 className="card-button"
                 onClick={() => handleAddToCart(book)}
@@ -56,4 +106,4 @@ const BookList = () => {
   );
 };
 
-export default BookList;
+export default BookList;

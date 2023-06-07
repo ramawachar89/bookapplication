@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { BsCart4 } from "react-icons/bs";
 export default function NavBar(){
     return(
@@ -15,7 +16,7 @@ export default function NavBar(){
         <a className="nav-link" style={{fontSize:"2rem"}} href="#">Features</a>
         <a className="nav-link" style={{fontSize:"2rem"}} href="#">Pricing</a>
         <a className="nav-link disabled" style={{fontSize:"2rem"}} href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        <a className="nav-link" style={{fontSize:"2rem",marginLeft:"105rem"}} href="#">Cart<BsCart4/></a>
+        <NavLink className="nav-link" style={{fontSize:"2rem",marginLeft:"105rem"}} to="mycart">Cart<BsCart4/></NavLink>
       </div>
     </div>
   </div>

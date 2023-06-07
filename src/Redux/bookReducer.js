@@ -1,6 +1,6 @@
 
-const initialState = {
-books:[
+const initialState = 
+[
     {
       id: 1,
       name: "Motivational",
@@ -227,8 +227,7 @@ books:[
             details: "Embark on an epic fantasy adventure in The Realm of Legends. Join the young hero on"
             }  , 
     
-  ]
-}
+        ]
   
   const bookReducer = (state = initialState, action) => {
     switch (action.type) {
