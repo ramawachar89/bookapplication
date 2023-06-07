@@ -11,9 +11,13 @@ const dispatch=useDispatch()
   };
   return (
     <div>
-      <h1>Cart</h1>
+       
+      <h1 style={{marginLeft:"70rem"}}>My Cart</h1>
       {cartItems.length === 0 ? (
-        <p>No items in the cart</p>
+        <>
+        <h2 style={{marginLeft:"70rem"}}>No items in the cart</h2>
+       
+        </>
       ) : (
         <ul>
           {cartItems.map((book, index) => (
