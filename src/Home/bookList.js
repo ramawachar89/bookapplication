@@ -25,6 +25,7 @@ const BookList = () => {
 
   const handleAddToCart = (book) => {
     dispatch(addToCart(book));
+    alert("add to cart successfully")
   };
 
   const handleBookDetails = (book) => {
