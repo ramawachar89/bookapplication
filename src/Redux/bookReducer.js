@@ -179,7 +179,7 @@ books:[
             name: "Mystery: The Secret Cipher",
             authorName: "Sarah Johnson",
             price: "199Rs",
-            image:"https://images.immediate.co.uk/production/volatile/sites/23/2020/12/Book.-GettyImages-1173401178-09cd172.jpg?quality=90&resize=980,654",
+            image:"",
             details: "Embark on a suspenseful journey with The Secret Cipher. Follow the protagonist as they unravel a complex web of clues, cryptic messages, and hidden codes in their quest to solve a baffling mystery. Delve into a world of intrigue, deception, and unexpected revelations. Will you decipher the secret? Pages: 320."
             },
             
@@ -188,7 +188,7 @@ books:[
             name: "Science Fiction: Beyond the Stars",
             authorName: "Michael Anderson",
             price: "299Rs",
-            image:"https://m.media-amazon.com/images/I/719ioEoHabL.jpg",
+            image:"",
             details: "Explore the limitless possibilities of the universe in Beyond the Stars. Set in a future where technology and imagination collide, this gripping science fiction novel takes you on a thrilling interstellar adventure. Brace yourself for mind-bending concepts, alien encounters, and thought-provoking explorations of the human condition. Pages: 450."
             },
             
@@ -197,7 +197,7 @@ books:[
             name: "Self-Help: The Power Within",
             authorName: "Jennifer Davis",
             price: "149Rs",
-            image:"https://m.media-amazon.com/images/I/51XHDeX7C5L.jpg",
+            image:"",
             details: "Unlock your true potential and discover The Power Within. This empowering self-help book offers practical strategies, insightful advice, and exercises to help you overcome obstacles, develop positive habits, and cultivate a mindset of success. Pages: 220."
             },
             
@@ -206,7 +206,7 @@ books:[
             name: "Romance: A Love to Remember",
             authorName: "Emma Thompson",
             price: "199Rs",
-            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzD2PJ_5pqGw3ow4OUO6pKSv0NrxCSK4p1jw&usqp=CAU",
+            image:"",
             details: "Experience a heartwarming tale of love and second chances in A Love to Remember. Follow the journey of two souls as they rediscover the power of love and heal old wounds. This emotional and captivating romance novel will tug at your heartstrings and leave you with a renewed belief in the magic of love. Pages: 320."
             },
             
@@ -215,7 +215,7 @@ books:[
             name: "Historical Fiction: The Forgotten Kingdom",
             authorName: "Thomas Wilson",
             price: "189Rs",
-            image:"https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501191466/the-forgotten-kingdom-9781501191466_lg.jpg",
+             image:"",
             details: "Step back in time and immerse yourself in the rich historical tapestry of The Forgotten Kingdom. Journey through ancient lands, witness epic battles, and encounter remarkable characters. This meticulously researched historical fiction novel will transport you to a bygone era and ignite your imagination. Pages: 400."
             },
             
@@ -224,7 +224,6 @@ books:[
             name: "Fantasy: The Realm of Legends",
             authorName: "Sophie Anderson",
             price: "249Rs",
-            image:"https://m.media-amazon.com/images/I/51eHGhjogNL._SY346_.jpg",
             details: "Embark on an epic fantasy adventure in The Realm of Legends. Join the young hero on"
             }  , 
     
