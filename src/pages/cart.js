@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromCart } from "../Redux/booksActions";
 import './cart.css'
+import NavBar from "../Navbar/navbar";
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
 const dispatch=useDispatch()
@@ -10,8 +11,9 @@ const dispatch=useDispatch()
     dispatch(removeFromCart(book));
   };
   return (
+    
     <div>
-       
+       <NavBar/>
       <h1 style={{marginLeft:"70rem"}}>My Cart</h1>
       {cartItems.length === 0 ? (
         <>
