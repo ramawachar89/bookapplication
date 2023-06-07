@@ -5,14 +5,14 @@
   }
   
   .card {
-    width: 300px;
+    width: 400px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    height: 330px;
+    height: 500px;
     background-size: cover;
   }
   
@@ -30,11 +30,11 @@
     padding: 16px;
   }
   
-  .card-title {
+   .card-title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 8px;
-  }
+  }  
   
   .card-author {
     font-size: 14px;
@@ -48,7 +48,7 @@
   }
   
   .card-button {
-    background-color: #f75c03;
+    background-color: #c24f0c;
     color: #fff;
     padding: 8px 16px;
     border-radius: 4px;
@@ -58,9 +58,7 @@
     transition: background-color 0.3s ease;
   }
   
-  .card-button:hover {
-    background-color: #e64900;
-  }
+ 
 
   .head{
     display: flex;
@@ -83,6 +81,7 @@
   h1{
     font-size: 80px;
   }
+  
   
 
 

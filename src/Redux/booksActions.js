@@ -5,3 +5,9 @@ export const loadBooks = () => {
       type: "LOAD_BOOKS",
     };
   };
+  export const addToCart = (book) => {
+    return {
+      type: "ADD_TO_CART",
+      payload: book,
+    };
+  };
